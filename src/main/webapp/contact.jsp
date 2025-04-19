@@ -1,11 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+  <!DOCTYPE html>
+  <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SkyJourney - Contact Us</title>
     <link rel="stylesheet" href="css/style.css" />
+    <style>
+      .success-message {
+        background-color: var(--primary);
+        color: white;
+        padding: 15px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+      }
+    </style>
   </head>
+
   <body>
     <header>
       <div class="container">
@@ -33,29 +45,30 @@
 
         <div class="contact-content">
           <div class="contact-form-container">
-            <form
-              class="contact-form"
-              action="${pageContext.request.contextPath}/contact"
-              method="POST"
-            >
-              <div class="form-field">
-                <label for="name">Full Name</label>
-                <input type="text" id="name" required />
+            <% if (request.getAttribute("successMessage") !=null) { %>
+              <div class="success-message">
+                <%= request.getAttribute("successMessage") %>
               </div>
-              <div class="form-field">
-                <label for="email">Email/Mobile</label>
-                <input type="text" id="email" required />
-              </div>
-              <div class="form-field">
-                <label for="subject">Subject</label>
-                <input type="text" id="subject" required />
-              </div>
-              <div class="form-field">
-                <label for="message">Message</label>
-                <textarea id="message" rows="5" required></textarea>
-              </div>
-              <button type="submit" class="primary-button">Send Message</button>
-            </form>
+              <% } %>
+                <form class="contact-form" action="./api/contact" method="POST">
+                  <div class="form-field">
+                    <label for="name">Full Name</label>
+                    <input name="name" type="text" id="name" required />
+                  </div>
+                  <div class="form-field">
+                    <label for="email">Email/Mobile</label>
+                    <input name="email" type="text" id="email" required />
+                  </div>
+                  <div class="form-field">
+                    <label for="subject">Subject</label>
+                    <input name="subject" type="text" id="subject" required />
+                  </div>
+                  <div class="form-field">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" rows="5" required></textarea>
+                  </div>
+                  <button type="submit" class="primary-button">Send Message</button>
+                </form>
           </div>
 
           <div class="contact-info">
@@ -120,4 +133,5 @@
       </div>
     </footer>
   </body>
-</html>
+
+  </html>

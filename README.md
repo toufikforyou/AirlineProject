@@ -20,7 +20,7 @@ This project is a simple airline website that provides basic functionality for m
 AirlineProject/
 ├── src/
 │   └── main/
-│       ├── java/
+│       ├── java/com/airline/
 │       │   ├── controllers/
 │       │   ├── models/
 │       │   ├── routes/
@@ -62,7 +62,7 @@ mvn clean install
 
 1. Start the server using Java:
 ```bash
-java -cp target/classes Server
+java -cp target/classes/com/airline Server
 ```
 
 2. Access the application in your web browser:
@@ -86,7 +86,7 @@ The server will automatically try ports 8000-8009 if the default port (8000) is 
 
 3. Run the server:
 ```bash
-    java -cp target/classes Server
+    java -cp target/classes com.airline.Server
 ```
 
 ## Features

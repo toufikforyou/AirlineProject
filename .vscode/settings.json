@@ -1,0 +1,23 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar"
+    ],
+    "java.configuration.runtimes": [
+        {
+            "name": "JavaSE-1.8",
+            "path": "/path/to/your/jdk8",
+            "default": true
+        }
+    ],
+    "java.import.gradle.enabled": false,
+    "java.import.maven.enabled": true,
+    "java.referencesCodeLens.enabled": true,
+    "java.errors.incompleteClasspath.severity": "warning",
+    "cSpell.words": [
+        "codehaus",
+        "fasterxml",
+        "javax",
+        "jstl"
+    ],
+    "java.configuration.detectJdksAtStart": true
+}

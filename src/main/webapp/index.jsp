@@ -1,11 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+  <!DOCTYPE html>
+  <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SkyJourney - Book Flights at Best Prices</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
+
   <body>
     <header>
       <div class="container">
@@ -97,10 +100,7 @@
 
         <div class="destinations-grid">
           <div class="destination-card">
-            <div
-              class="destination-img"
-              style="background-image: url('/api/placeholder/300/200')"
-            ></div>
+            <div class="destination-img" style="background-image: url('/api/placeholder/300/200')"></div>
             <div class="destination-info">
               <h3>New York, USA</h3>
               <p>The city that never sleeps</p>
@@ -109,10 +109,7 @@
           </div>
 
           <div class="destination-card">
-            <div
-              class="destination-img"
-              style="background-image: url('/api/placeholder/300/200')"
-            ></div>
+            <div class="destination-img" style="background-image: url('/api/placeholder/300/200')"></div>
             <div class="destination-info">
               <h3>Paris, France</h3>
               <p>The city of love</p>
@@ -121,10 +118,7 @@
           </div>
 
           <div class="destination-card">
-            <div
-              class="destination-img"
-              style="background-image: url('/api/placeholder/300/200')"
-            ></div>
+            <div class="destination-img" style="background-image: url('/api/placeholder/300/200')"></div>
             <div class="destination-info">
               <h3>Tokyo, Japan</h3>
               <p>Where tradition meets future</p>
@@ -133,10 +127,7 @@
           </div>
 
           <div class="destination-card">
-            <div
-              class="destination-img"
-              style="background-image: url('/api/placeholder/300/200')"
-            ></div>
+            <div class="destination-img" style="background-image: url('/api/placeholder/300/200')"></div>
             <div class="destination-info">
               <h3>Dubai, UAE</h3>
               <p>Experience luxury</p>
@@ -198,4 +189,5 @@
     </footer>
     <script src="js/app.js"></script>
   </body>
-</html>
+
+  </html>
